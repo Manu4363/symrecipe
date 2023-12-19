@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class IngredientController extends AbstractController
 {
-    #[Route('/ingredient', name: 'app_ingredient')]
+    #[Route('/ingredient', name: 'ingredient')]
     public function index(IngredientRepository $ingredientRepository): Response
     {
         return $this->render('pages/ingredient/index.html.twig', [
